@@ -293,8 +293,17 @@
   .py-\[116px\] {
     padding-block: 116px;
   }
+  .pt-10 {
+    padding-top: calc(var(--spacing) * 10);
+  }
   .pt-14 {
     padding-top: calc(var(--spacing) * 14);
+  }
+  .pb-6 {
+    padding-bottom: calc(var(--spacing) * 6);
+  }
+  .pb-8 {
+    padding-bottom: calc(var(--spacing) * 8);
   }
   .pl-\[85px\] {
     padding-left: 85px;
@@ -445,6 +454,16 @@
       max-width: 578px;
     }
   }
+  .sm\:pt-14 {
+    @media (width >= 40rem) {
+      padding-top: calc(var(--spacing) * 14);
+    }
+  }
+  .sm\:pl-\[85px\] {
+    @media (width >= 40rem) {
+      padding-left: 85px;
+    }
+  }
   .sm\:text-start {
     @media (width >= 40rem) {
       text-align: start;
@@ -459,6 +478,11 @@
   .md\:mx-0 {
     @media (width >= 48rem) {
       margin-inline: calc(var(--spacing) * 0);
+    }
+  }
+  .md\:pb-8 {
+    @media (width >= 48rem) {
+      padding-bottom: calc(var(--spacing) * 8);
     }
   }
 }
